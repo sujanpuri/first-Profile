@@ -30,10 +30,19 @@ body
         border-bottom: 3px solid white;
     }
 }
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .intro p
 {
     display: flex;
     flex-direction: column; 
+    align-items: center;
+    justify-content: center;
     font-family: cursive;
     padding: 2px;
     border-top: 3px solid red;
@@ -48,27 +57,62 @@ body
 .intro span
 {
     color: red;
+    transition: transform 0.5s ease;
+    transform: scale(1);
 }
 .intro span:hover
 {
     background-color: blue;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
     border: 2px;
     border-radius: 3px;
     color: white;
 }
+.post 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.post a
+{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1vw;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.post a:hover
+{
+    color: rgb(203, 203, 203);
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+}
+@media only screen and (max-width:1000px)
+{
+    .post a 
+    {
+        font-size: 14px;
+    }
+}
+/* INTRO IMG */
+
 .intro img
 {
     height: 400px;
     margin: 3px;
     border: 3px solid red;
     border-radius: 20px;
+    transition: transform 0.5s ease;
+    transform: scale(1);
 }
 .intro img:hover
 {
-    height: 406px;
-    margin: 0px 3px 0px 3px;
-    border: 3px solid red;
-    border-radius: 20px;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width:800px)
@@ -79,13 +123,13 @@ body
         margin: 3px;
         border: 3px solid red;
         border-radius: 20px;
+        transition: transform 0.5s ease;
+        transform: scale(1);
     }
     .intro img:hover
     {
-        height: 206px;
-        margin: 0px 3px 0px 3px;
-        border: 3px solid red;
-        border-radius: 20px;
+        transition: transform 0.5s ease;
+        transform: scale(1.1);
     }
 }
 
@@ -125,21 +169,47 @@ body
 {
     color: red;
 }
-.links img
+.about h2:hover
 {
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 20%;
-    margin: 5px 20px 20px 20px;
+    color: red;
+}
+.works
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.works a
+{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+.works a:hover
+{
+    transition: transform 0.5s ease;
+    transform: scale(1.08);
+}
+.works img
+{
+    padding: 10px;
+    height: 4.5vw;
+    border-radius: 100%;
+}
+@media only screen and (max-width:800px)
+{
+    .works img
+    {
+        height:50px
+    }
 }
 
-.links img:hover
-{
-    height: 55px;
-    border: 2px solid black;
-    border-radius: 20%;
-    margin: 0px 15px 20px 15px;
-}
 /*------------------------*/
 
 .formbox
@@ -183,6 +253,10 @@ form h1:hover
 {
     margin: 5px;
 }
+.formbox input,textarea
+{
+    border-radius: 10px;
+}
 #button
 {
     margin-top: 20px;
@@ -193,6 +267,29 @@ form h1:hover
     color: white;
 }
 
+/*links*/
+
+.linkcont
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links img
+{
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin: 5px 20px 20px 20px;
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+.links img:hover
+{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
 
 /*-----------------*/
 
