@@ -57,6 +57,7 @@ body
 .intro span
 {
     color: red;
+    font-family: 'Baloo Bhai';
     transition: transform 0.5s ease;
     transform: scale(1);
 }
@@ -78,7 +79,7 @@ body
 {
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    color: blue;
+    color: lightblue;
     font-size: 1vw;
     margin-left: 3px;
     margin-right: 3px;
@@ -163,13 +164,23 @@ body
         align-items: center;
     }
 }
+.about h1
+{
+    font-family: 'baloo bhai';
+    color: red;
+}
+.about h2
+{
+    font-family: 'baloo bhai';
+    color: red;
+}
 .about h1:hover
 {
-    color: red;
+    color: rgb(169, 0, 0);
 }
 .about h2:hover
 {
-    color: red;
+    color: rgb(169, 0, 0);
 }
 .works
 {
@@ -182,7 +193,7 @@ body
 .works a
 {
     text-decoration: none;
-    color: white;
+    color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
